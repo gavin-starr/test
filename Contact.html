@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>This is my contact page</title>
+<script src="jquery-3.1.1.min.js"></script>
+<script>
+ $(document).ready(function(){
+   $("#flip").click(function(){
+     $("#panel").slideDown("slow");
+   });
+ });
+</script>
+  </head>
+  <style>
+  p {
+    color: orange;
+  }
+  body {
+    background-color: blue;
+  }
+
+  .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      .topnav a.active {
+        background-color: red;
+        color: white;
+      }
+
+      #panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #00ff00;
+    border: solid 1px #FFFFFF;
+  }
+  #panel {
+    padding: 50px;
+    display: none;
+  }
+
+
+  </style>
+  <body>
+
+    <div class="topnav">
+    <a class="active" href="Assignment3.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Contact.html">Contact</a>
+  </div>
+
+
+  <div id="flip">Click for Contact info!</div>
+  <div id="panel">contact me at 814-577-7672 or via email at gistarr@pointpark.edu</div>
+
+  </body>
+</html>

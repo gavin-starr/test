@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="button.css">
+    <title>This is my about page</title>
+<script src="jquery-3.1.1.min.js"></script>
+
+  </head>
+  <style>
+  p {
+    color: white;
+  }
+  body {
+    background-color: black;
+  }
+
+  .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      .topnav a.active {
+        background-color: red;
+        color: white;
+      }
+
+
+
+  </style>
+  <body>
+
+    <div class="topnav">
+    <a class="active" href="Assignment3.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Contact.html">Contact</a>
+  </div>
+
+  <script src="jquery-3.1.1.min.js"></script>
+<p class="enlargeable"> My name is Gavin Starr, I am from Clearfeild Pennsylvania. I am currently a
+   sophomore attending Point Park University majoring in infomation technology. I also am in Air
+    Force ROTC at the University of Pittsburg working on my future of becoming an officer in the
+     United States Air Force where I hope to become a Cyberspace Operations officer and hopefully
+      after the military I get a job in a field related to cyber security.</p>
+<button id="enlarge">Enlarge</button>
+
+<script>
+  $("button#enlarge").on("click", function(){
+    $("p.enlargeable").addClass("big");
+  });
+
+  $(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+</script>
+
+
+  <!-- Buttons here -->
+  <button id="hide">Hide</button>
+  <button id="show">Show</button>
+
+  </body>
+</html>
